@@ -48,5 +48,7 @@ Then I will go to Settings -> Pages
 
 And my domain registrar:
 ![iv.lt](/assets/images/posts/2023-11-23-jekyll-setup/iv.png)
+
+Final result:
 ![Screenshot from 2023-11-23 21-29-32.png](/uploads/Screenshot%20from%202023-11-23%2021-29-32.png)
 
