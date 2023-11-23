@@ -1,5 +1,5 @@
 ---
-title: Trying to talk with torrent trackers via DHT using PHP
+title: Trying to talk with torrent trackers via DHT using PHP (part 1 - Ping)
 date: 2023-11-23 21:14:00 Z
 ---
 
