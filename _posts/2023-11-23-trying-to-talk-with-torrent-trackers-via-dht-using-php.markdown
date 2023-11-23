@@ -13,6 +13,7 @@ From a quick Google search, I see that there is no working example of this in PH
 
 But I found this:
 
+```
     import bencode
     import random
     import socket
@@ -42,6 +43,7 @@ But I found this:
     ping_response = bencode.bdecode(r[0])
     
     print(ping_response)
+```
 
 So, I should be able to implement this in PHP, should be fun:D
 
@@ -50,6 +52,7 @@ A quick search, and I got this:
 ```
 composer require rych/bencode
 ```
+
 Somebody would call that cheating, I call it: **progress** 😈
 
 ### Final ping result
