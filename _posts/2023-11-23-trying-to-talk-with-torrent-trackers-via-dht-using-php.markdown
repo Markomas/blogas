@@ -1,6 +1,6 @@
 ---
 title: Trying to talk with torrent trackers via DHT using PHP (part 1 - Ping)
-date: 2023-11-23 21:14:00 Z
+date: '2023-11-23 21:14:00 +0000'
 layout: post
 ---
 
@@ -13,7 +13,7 @@ From a quick Google search, I see that there is no working example of this in PH
 
 But I found this:
 
-```
+{% highlight python %}
     import bencode
     import random
     import socket
@@ -43,7 +43,7 @@ But I found this:
     ping_response = bencode.bdecode(r[0])
     
     print(ping_response)
-```
+{% endhighlight %}
 
 So, I should be able to implement this in PHP, should be fun:D
 
@@ -57,7 +57,7 @@ Somebody would call that cheating, I call it: **progress** 😈
 
 ### Final ping result
 
-```
+```php
 <?php
 
 use Rych\Bencode\Bencode;

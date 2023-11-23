@@ -18,3 +18,8 @@ plugins:
 - jekyll-feed
 jekyll_admin:
   homepage: posts
+markdown: kramdown
+highlighter: rouge
+
+
+
