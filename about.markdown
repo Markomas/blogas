@@ -1,7 +1,7 @@
 ---
 title: About
-layout: page
 permalink: "/about/"
+layout: page
 ---
 
 This page created because I am about to lose my job as a developer 😞

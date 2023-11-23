@@ -1,5 +1,6 @@
 ---
 title: Jekyll setup
+date: 2023-11-23 00:00:00 Z
 layout: post
 ---
 
