@@ -1,5 +1,5 @@
 ---
-title: yt-dlp download worker with Go, or how not to do "Hello World" with Go
+title: Yt-dlp download worker with Go, or how not to do "Hello World" with Go
 date: 2023-11-28 13:04:00 Z
 ---
 
@@ -9,6 +9,10 @@ Should I implement Levenstein distance algorithms and compare performance? - Use
 Should I implement MySQL UDF? - as a first project, it scares me to mix C and Go, so maybe it should be a second project.
 Should I create something that downloads videos for future projects? - maybe I always liked scraping data from WEB managing media files.
 
-# Starting project
+# Starting my first Go project
 My go-to Go IDE will be JetBrains GoLand. I can use other IDEs, but I am used to JetBrains IDEs, and I bought all IDEs ages ago.
 ![Screenshot from 2023-11-28 15-23-48.png](/uploads/Screenshot%20from%202023-11-28%2015-23-48.png)
+
+What I should do is probably connect to some queuing system with Go to receive messages/events (Kafka, RabitMQ, Beanstalkd). Easier would be to create a REST microservice, but from experience, that doesn't work well with long-running tasks.
+
+
