@@ -63,7 +63,8 @@ In this window, we can add a new environment (Pulsar Broker):
 
 It seems to be working... Useless, but working...
 Using CLI commands, you can create topics/messages/subscribe to all good topics.
-But I will explore further in the next post. 
+The next things on the todo list: Pulsar SQL, tiered storage, transactions, adding security...
+But I will explore it further in the next posts. 
 
 
 
