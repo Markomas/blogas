@@ -1,6 +1,7 @@
 ---
 title: First time using Apache Pulsar (Pulsar Manager UI setup)
 date: 2023-11-28 13:46:00 Z
+layout: post
 ---
 
 Yesterday, I was in a job interview, and they asked me if I ever used Apache Pulsar.
