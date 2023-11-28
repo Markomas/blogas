@@ -61,6 +61,9 @@ Password: **apachepulsar**
 In this window, we can add a new environment (Pulsar Broker):
 ![Screenshot from 2023-11-28 17-55-41.png](/uploads/Screenshot%20from%202023-11-28%2017-55-41.png)
 
+It seems to be working... Useless, but working...
+
+
 
 
 
