@@ -1,5 +1,5 @@
 ---
-title: First time using Apache Pulsar
+title: First time using Apache Pulsar (Pulsar Manager UI setup)
 date: 2023-11-28 13:46:00 Z
 ---
 
@@ -58,9 +58,11 @@ And we are greeted with the login page:
 User: **admin**
 Password: **apachepulsar**
 
-In this window, we can add a new environment:
-![Screenshot from 2023-11-28 17-49-02.png](/uploads/Screenshot%20from%202023-11-28%2017-49-02.png)
+In this window, we can add a new environment (Pulsar Broker):
+![Screenshot from 2023-11-28 17-55-41.png](/uploads/Screenshot%20from%202023-11-28%2017-55-41.png)
 
-Then, if we go to [http://localhost:9527/](http://localhost:9527/)
+
+
+
 
 
