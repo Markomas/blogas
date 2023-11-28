@@ -11,6 +11,7 @@ It's time to do a quick run with Docker and check its performance.
 
 Well, because I want pulsar with the manager, I used a sample docker-compose.yml file:
 
+```
     version: "3.7"
     services:
       pulsar:
@@ -34,11 +35,13 @@ Well, because I want pulsar with the manager, I used a sample docker-compose.yml
           - pulsar
         environment:
           SPRING_CONFIGURATION_FILE: /pulsar-manager/pulsar-manager/application.properties
+```
 
 Just run ```docker-compose up```
 
 Then on local box run this command to create user and password:
 
+```
     CSRF_TOKEN=$(curl http://localhost:7750/pulsar-manager/csrf-token)
     curl \
        -H 'X-XSRF-TOKEN: $CSRF_TOKEN' \
@@ -46,3 +49,4 @@ Then on local box run this command to create user and password:
        -H "Content-Type: application/json" \
        -X PUT http://localhost:7750/pulsar-manager/users/superuser \
        -d '{"name": "admin", "password": "apachepulsar", "description": "test", "email": "username@test.org"}'
+```
