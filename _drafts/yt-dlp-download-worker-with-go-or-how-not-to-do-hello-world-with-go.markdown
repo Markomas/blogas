@@ -17,7 +17,7 @@ I should probably try to connect to some queuing system with Go to receive messa
 
 First, I need "docker-compose.yml" to start the queue service. As in previous post I will use Apache Pulsar:
 
-```
+```yaml
 version: "3.7"
 services:
   pulsar:
