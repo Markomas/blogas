@@ -15,8 +15,33 @@ My go-to Go IDE will be JetBrains GoLand. I can use other IDEs, but I am used to
 
 I should probably try to connect to some queuing system with Go to receive messages/events (Kafka, RabitMQ, Beanstalkd). Easier would be to create a REST microservice, but from experience, that doesn't work well with long-running tasks.
 
-First, I need "docker-compose.yml" to start the queue service. I feel adventurous and will chose new tool, that I never used
+First, I need "docker-compose.yml" to start the queue service. As in previous post I will use Apache Pulsar:
 
+```
+version: "3.7"
+services:
+  pulsar:
+    image: apachepulsar/pulsar:2.6.0
+    command: bin/pulsar standalone
+    hostname: pulsar
+    ports:
+      - "8081:8080"
+      - "6650:6650"
+    restart: unless-stopped
+    volumes:
+      - "./data/:/pulsar/data"
+  dashboard:
+    image: apachepulsar/pulsar-manager:v0.2.0
+    ports:
+      - "9527:9527"
+      - "7750:7750"
+    depends_on:
+      - pulsar
+    links:
+      - pulsar
+    environment:
+      SPRING_CONFIGURATION_FILE: /pulsar-manager/pulsar-manager/application.properties
+```
 
 
 
