@@ -50,3 +50,17 @@ Then on local box run this command to create user and password:
        -X PUT http://localhost:7750/pulsar-manager/users/superuser \
        -d '{"name": "admin", "password": "apachepulsar", "description": "test", "email": "username@test.org"}'
 ```
+
+Then in the browser just go to: [http://localhost:9527/#/environments](http://localhost:9527/#/environments)
+And we are greeted with the login page:
+![Screenshot from 2023-11-28 17-42-28.png](/uploads/Screenshot%20from%202023-11-28%2017-42-28.png)
+
+User: **admin**
+Password: **apachepulsar**
+
+In this window, we can add a new environment:
+![Screenshot from 2023-11-28 17-49-02.png](/uploads/Screenshot%20from%202023-11-28%2017-49-02.png)
+
+Then, if we go to [http://localhost:9527/](http://localhost:9527/)
+
+
