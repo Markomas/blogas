@@ -39,7 +39,7 @@ services:
 
 Just run ```docker-compose up```
 
-Then on local box run this command to create user and password:
+Then, on the local box run this command to create a user and password:
 
 ```shell
     CSRF_TOKEN=$(curl http://localhost:7750/pulsar-manager/csrf-token)
