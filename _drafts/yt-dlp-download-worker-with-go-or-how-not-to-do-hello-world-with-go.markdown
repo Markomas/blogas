@@ -13,6 +13,10 @@ Should I create something that downloads videos for future projects? - maybe I a
 My go-to Go IDE will be JetBrains GoLand. I can use other IDEs, but I am used to JetBrains IDEs, and I bought all IDEs ages ago.
 ![Screenshot from 2023-11-28 15-23-48.png](/uploads/Screenshot%20from%202023-11-28%2015-23-48.png)
 
-What I should do is probably connect to some queuing system with Go to receive messages/events (Kafka, RabitMQ, Beanstalkd). Easier would be to create a REST microservice, but from experience, that doesn't work well with long-running tasks.
+I should probably try to connect to some queuing system with Go to receive messages/events (Kafka, RabitMQ, Beanstalkd). Easier would be to create a REST microservice, but from experience, that doesn't work well with long-running tasks.
+
+First, I need "docker-compose.yml" to start the queue service. I feel adventurous and will chose new tool, that I never used
+
+
 
 
