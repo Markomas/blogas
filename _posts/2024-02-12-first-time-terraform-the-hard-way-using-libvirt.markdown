@@ -105,3 +105,6 @@ runcmd:
 ![Screenshot from 2024-02-12 14-42-26.png](/uploads/Screenshot%20from%202024-02-12%2014-42-26.png)
 
 The issue is described here: [https://github.com/hashicorp/terraform/issues/3287](https://github.com/hashicorp/terraform/issues/3287)
+
+# Final result:
+[https://github.com/Markomas/terraform_debian](https://github.com/Markomas/terraform_debian)
