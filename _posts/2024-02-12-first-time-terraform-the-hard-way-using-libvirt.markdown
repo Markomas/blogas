@@ -1,6 +1,7 @@
 ---
 title: First time terraform (the hard way using libvirt)
 date: 2024-02-12 12:06:00 Z
+layout: post
 ---
 
 I decided to terraform to manage VMs on my home lab server.
