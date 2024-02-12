@@ -75,7 +75,7 @@ There was a weird permission issue that looked like Terraform couldn't manage VM
 Then I found this issue:
 https://github.com/dmacvicar/terraform-provider-libvirt/issues/546
 
-So just changing this file /etc/apparmor.d/libvirt/TEMPLATE.qemu it worked:
+So, just changing this file /etc/apparmor.d/libvirt/TEMPLATE.qemu it worked:
 ```
 #
 # This profile is for the domain whose UUID matches this file.
@@ -91,4 +91,17 @@ profile LIBVIRT_TEMPLATE flags=(attach_disconnected) {
 
 ## Third issue:
 
+![Screenshot from 2024-02-12 14-33-00.png](/uploads/Screenshot%20from%202024-02-12%2014-33-00.png)
+network_config and user_data can't be set at the same time, so I decided for now go with default network settings (holy cow, I spent too long on this)
 
+## Fourth issue:
+For some reason, qemu-guest-agent after installing doesn't start, so I needed to add this line to cloud_init.yml:
+```
+runcmd:
+  - [ systemctl, start, qemu-guest-agent ]
+```
+
+## Fifth issue:
+![Screenshot from 2024-02-12 14-42-26.png](/uploads/Screenshot%20from%202024-02-12%2014-42-26.png)
+
+The issue is described here: [https://github.com/hashicorp/terraform/issues/3287](https://github.com/hashicorp/terraform/issues/3287)
